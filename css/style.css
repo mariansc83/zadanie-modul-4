@@ -1,5 +1,5 @@
 /* global */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Roboto+Slab:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.7;
+}
+
+section {
+  padding: 98px 0;
 }
 
 li {
@@ -95,30 +99,128 @@ a {
 }
 
 .page-title {
-  font-size: 40px;
+  font-size: 45px;
   text-transform: uppercase;
   margin-top: 20px;
+  word-spacing: -4px;
 }
 
-.splash-inner .btn-first {
+.btn-first {
   background-color: #FED136;
   padding: 10px 15px;
   margin-top: 20px;
 }
 
+.content {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.content-description {
+  font-weight: 300;
+  font-style: italic;
+  padding-bottom: 88px;
+}
+
+.circle-border {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #FED136;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-item {
+  margin-bottom: 50px;
+}
+
+.content-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content-item-description {
+  font-weight: 200;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: -1px;
+}
+
+/* portfolio */
+.portfolio {
+  background: #F7F7F7;
+}
+
+.portfolio .content-item {
+  background: white;
+  padding: 0 0 15px 0;
+  border: 15px solid #F7F7F7;
+}
+
+.portfolio .content-item img {
+  width: 100%;
+}
+
+.portfolio .content-item-description {
+  font-style: italic;
+}
+
+/* footer */
+.page-footer {
+  padding: 25px 0;
+}
+
+.page-footer .row {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.page-footer p {
+  font-size: 12px;
+  margin-right: 80px;
+}
+
+.page-footer i {
+  color: #222222;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
 /* media */
 @media (max-width: 576px) {
-  .navigation {
-    padding: 20px;
+  .splash .navigation.row {
+    margin: 0;
   }
   .navigation .logo {
-    font-size: 25px;
+    font-size: 20px;
   }
   .page-subtitle {
     font-size: 25px;
   }
   .page-title {
-    font-size: 25px;
+    font-size: 35px;
+  }
+  .btn-first {
+    font-size: 12px;
   }
 }
 
@@ -131,6 +233,12 @@ a {
   }
   .navigation ul a {
     font-size: 12px;
+  }
+  .page-footer p {
+    margin: 15px;
+  }
+  .social {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
