@@ -10,71 +10,77 @@
 </head>
 
 <body>
-    <nav class="navigation">
+    <header class="splash">
         <div class="container">
-            <div class="row">
-                <a class="logo col-6 col-md-3 col-lg-4" href="#">Golden</a>
-                <div class="navbar col-6 col-md-9 col-lg-7">
-                    <div class="burger">
-                        <i class="fas fa-bars"></i>
-                        <i class="fas fa-times disappear"></i>
-                    </div>
-                    <ul class="row">
-                        <li>
-                            <a class="sub-menu-opener sub-menu-opener-one" href="#">Home</a>
+            <nav class="navigation col-12">
+                <ul class="company-logo col-3 col-md-2 col-lg-4">
+                    <li><a href="#" class="logo">Golden</a></li>
+                </ul>
+                <div class="navigation-bar col-9 col-md-10 col-lg-8">
+                    <ul class="main-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li><a href="">Go to section</a></li>
                             </ul>
                         </li>
-
-                        <li>
-                            <a class="sub-menu-opener sub-menu-opener-two" href="#">Services</a>
+                        <li><a href="#">Portfolio</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li><a href="">Go to section</a></li>
                             </ul>
                         </li>
-
-                        <li>
-                            <a class="sub-menu-opener sub-menu-opener-three" href="#">Portfolio</a>
+                        <li><a href="#">About</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li><a href="">Go to section</a></li>
                             </ul>
                         </li>
-
-                        <li>
-                            <a class="sub-menu-opener sub-menu-opener-four" href="#">About</a>
+                        <li><a href="#">Contact</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="sub-menu-opener sub-menu-opener-five" href="#">Contact</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Lorem</a></li>
-                                <li><a href="#">Lorem</a></li>
+                                <li><a href="">Go to section</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <header class="splash">
-        <div class="container">
+                <!-- navigation-checkbox -->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                    <ul class="sidebarMenuInner">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Go to section</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Go to section</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Go to section</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Go to section</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="splash-inner">
                 <h2 class="page-subtitle">Welcome to our studio!</h2>
                 <h1 class="page-title">it's nice to meet you</h1>
                 <a href="#" class="btn btn-first">tell me more</a>
             </div>
         </div>
-
     </header>
-
     <section class="services">
         <div class="container">
             <div class="content">
@@ -92,9 +98,7 @@
                     </div>
                     <div class="content-item col-md-4">
                         <div class="circle-border">
-
                             <img src="https://i.postimg.cc/gjBXDXDc/Icon-Laptop-2x.jpg" alt="icon-laptop">
-
                         </div>
                         <h4>Responsive Web</h4>
                         <p class="content-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -114,7 +118,6 @@
             </div>
         </div>
     </section>
-
     <section class="portfolio">
         <div class="container">
             <div class="content">
@@ -122,50 +125,61 @@
                 <p class="content-description">Lorem ipsum dolor, sit amet consectetur.</p>
                 <div class="row">
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/KzqW3qDb/Clip.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Ebony & Ivory</h4>
-                            <p class="content-item-description">Branding</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/KzqW3qDb/Clip.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Ebony & Ivory</h4>
+                                <p class="content-item-description">Branding</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/cJT9P9j3/Clip.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Smart Stationary</h4>
-                            <p class="content-item-description">Print Design</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/cJT9P9j3/Clip.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Smart Stationary</h4>
+                                <p class="content-item-description">Print Design</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/KzwdspkN/Container.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Clever Poster</h4>
-                            <p class="content-item-description">Print Design</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/KzwdspkN/Container.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Clever Poster</h4>
+                                <p class="content-item-description">Print Design</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/Nf1Wp4g6/Container.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Vinyl Record</h4>
-                            <p class="content-item-description">Product Mock-Up</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/Nf1Wp4g6/Container.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Vinyl Record</h4>
+                                <p class="content-item-description">Product Mock-Up</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/tTZcPdSV/Container.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Treehouse Template</h4>
-                            <p class="content-item-description">Web Design</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/tTZcPdSV/Container.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Treehouse Template</h4>
+                                <p class="content-item-description">Web Design</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content-item col-md-6 col-lg-4">
-                        <img src="https://i.postimg.cc/0j7HXkqk/Container.jpg" alt="">
-                        <div class="portfolio-desc-wrapper">
-                            <h4>Burned Logo</h4>
-                            <p class="content-item-description">Branding</p>
+                        <div class="portfolio-item-wrapper">
+                            <img src="https://i.postimg.cc/0j7HXkqk/Container.jpg" alt="">
+                            <div class="item-desc">
+                                <h4>Burned Logo</h4>
+                                <p class="content-item-description">Branding</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer class="page-footer">
         <div class="container">
@@ -181,7 +195,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/136bcbc643.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
